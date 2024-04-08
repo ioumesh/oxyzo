@@ -1,0 +1,56 @@
+// Footer.scss
+
+.footer {
+  background-color: #f0f0f0; // Example background color for the footer
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between; // Space between columns
+  padding: 30px;
+}
+
+.menu-column {
+  flex: 1; // Each column takes equal space
+  margin-right: 20px; // Add some margin between columns
+}
+
+.menu-column:last-child {
+  margin-right: 0; // Remove margin for the last column
+}
+
+.menu-column h3 {
+  margin-bottom: 10px;
+}
+
+.menu-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-column ul li {
+  margin-bottom: 5px;
+}
+
+.menu-column ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-column ul li a:hover {
+  text-decoration: underline;
+}
+
+// Style for the "New" badge
+.menu-column ul li {
+  .new-badge {
+    border-radius: 16px;
+    background: #dcfce7;
+    padding: 4px 8px;
+    overflow: hidden;
+    color: #16a34a;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}

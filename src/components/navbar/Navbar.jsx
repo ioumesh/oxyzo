@@ -1,61 +1,9 @@
 // Navbar.js
 import React from "react";
 import "./navbar.scss";
+import { menuData } from "../../data/constant";
 
 const Navbar = () => {
-  const menuData = [
-    {
-      label: "SME Financing",
-      url: "/",
-      submenu: [
-        {
-          label: "Mission",
-          url: "/about/mission",
-        },
-        {
-          label: "Team",
-          url: "/about/team",
-        },
-      ],
-    },
-    {
-      label: "Corporate Financing",
-      url: "/about",
-      submenu: [
-        {
-          label: "Mission",
-          url: "/about/mission",
-        },
-        {
-          label: "Team",
-          url: "/about/team",
-        },
-      ],
-    },
-    {
-      label: "Partner with Us",
-      url: "/contact",
-    },
-    {
-      label: "About Us",
-      url: "/services",
-      submenu: [
-        {
-          label: "Web Development",
-          url: "/services/web-development",
-        },
-        {
-          label: "Graphic Design",
-          url: "/services/graphic-design",
-        },
-        {
-          label: "SEO",
-          url: "/services/seo",
-        },
-      ],
-    },
-  ];
-
   const renderMenu = (menu) => {
     if (menu.submenu) {
       return (
