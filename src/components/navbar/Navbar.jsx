@@ -1,7 +1,7 @@
-// Navbar.js
 import React from "react";
 import "./navbar.scss";
 import { menuData } from "../../data/constant";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const renderMenu = (menu) => {
@@ -12,18 +12,18 @@ const Navbar = () => {
           <span className="arrow-down">&#9660;</span>
           <div className="submenu">
             {menu.submenu.map((item, index) => (
-              <a key={index} href={item.url} className="submenu-item">
+              <Link key={index} to={item.url} className="submenu-item">
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
       );
     } else {
       return (
-        <a href={menu.url} className="menu-item" key={menu.label}>
+        <Link to={menu.url} className="menu-item" key={menu.label}>
           {menu.label}
-        </a>
+        </Link>
       );
     }
   };
@@ -33,10 +33,12 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar-left">
           <div className="navbar-icon">
-            <img
-              src="https://d5nfy7n2jvqm2.cloudfront.net/fe-imgs/new_design/oxyzo-logo-new-01.svg"
-              alt="logo"
-            />
+            <Link to={"/"}>
+              <img
+                src="https://d5nfy7n2jvqm2.cloudfront.net/fe-imgs/new_design/oxyzo-logo-new-01.svg"
+                alt="logo"
+              />
+            </Link>
           </div>
         </div>
         <div className="navbar-right">

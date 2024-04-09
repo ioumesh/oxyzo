@@ -36,6 +36,10 @@ export const menuData = [
     url: "#",
     submenu: [
       {
+        label: "Contact us",
+        url: "/contact",
+      },
+      {
         label: "Whow we Are",
         url: "#",
       },

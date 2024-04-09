@@ -1,25 +1,25 @@
-import FaqSection from "./components/faqsection/FaqSection";
-import Navbar from "./components/navbar/Navbar";
-import TermLoan from "./components/termloan/TermLoan";
-import WorkingSection from "./components/workingsection/WorkingSection";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import FooterInfo from "./components/footer/FooterInfo";
 import Footer from "./components/footer/Footer";
 import "./layout.scss";
-import { faqs } from "./data/constant";
-import FooterInfo from "./components/footer/FooterInfo";
-import WhyOxyzo from "./components/whysection/WhyOxyzo";
+import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
-    <div className="layout">
-      <Navbar />
+    <>
+      <div className="layout-section">
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <div className="section-layout">
-        <WorkingSection />
-        <TermLoan />
-        <WhyOxyzo/>
-        <FaqSection faqs={faqs} />
         <Footer />
         <FooterInfo />
       </div>
-    </div>
+    </>
   );
 }
 
