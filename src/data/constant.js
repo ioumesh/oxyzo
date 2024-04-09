@@ -1,51 +1,51 @@
 export const menuData = [
   {
     label: "SME Financing",
-    url: "/",
+    url: "#",
     submenu: [
       {
         label: "Our Financing Products",
-        url: "/about/Our Financing Products",
+        url: "#",
       },
       {
         label: "Purchase Finance",
-        url: "/about/team",
+        url: "#",
       },
     ],
   },
   {
     label: "Corporate Financing",
-    url: "/about",
+    url: "#",
     submenu: [
       {
         label: "Corporate Financing",
-        url: "/about/CorporateFinancing",
+        url: "#",
       },
       {
         label: "All Products",
-        url: "/about/team",
+        url: "#",
       },
     ],
   },
   {
     label: "Partner with Us",
-    url: "/contact",
+    url: "#",
   },
   {
     label: "About Us",
-    url: "/services",
+    url: "#",
     submenu: [
       {
         label: "Whow we Are",
-        url: "/services/web-development",
+        url: "#",
       },
       {
         label: "Team",
-        url: "/services/graphic-design",
+        url: "#",
       },
       {
         label: "Investor",
-        url: "/services/seo",
+        url: "#",
       },
     ],
   },
@@ -141,5 +141,87 @@ export const footerData = [
       { label: "Financial Information", url: "#" },
       { label: "Statutory Disclosures", url: "#" },
     ],
+  },
+];
+
+export const footerInfo = {
+  companyName: "OXYZO Financial Services Limited",
+  address:
+    "#101, First Floor, Vipul Agora Mall MG Road, Gurugram Haryana-122001, India",
+  menuLinks: [
+    {
+      title: "COMPANY",
+      links: [
+        { label: "About Us", url: "#" },
+        { label: "Contact Us", url: "#" },
+        { label: "Media Kit", url: "#" },
+        { label: "Partner with Us", url: "#" },
+      ],
+    },
+    {
+      title: "POLICY",
+      links: [
+        { label: "Terms of Use", url: "#" },
+        { label: "Privacy Policy", url: "#" },
+        { label: "Fraud Prevention Policy", url: "#" },
+      ],
+    },
+  ],
+  socialMedia: [
+    {
+      src: "https://fastly-production.24c.in/cars24/link_category_items/facebook_1679505933.svg",
+      url: "https://facebook.com/yourpage",
+    },
+    {
+      src: "https://fastly-production.24c.in/cars24/link_category_items/twitter_1679505951.svg",
+      url: "https://twitter.com/yourpage",
+    },
+    {
+      src: "https://fastly-production.24c.in/cars24/link_category_items/youtube_1679505915.svg",
+      url: "https://linkedin.com/yourpage",
+    },
+    {
+      src: "https://fastly-production.24c.in/cars24/link_category_items/linkedin_1679505894.svg",
+      url: "https://linkedin.com/yourpage",
+    },
+  ],
+  storeIcon: [
+    {
+      url: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/playstore-lt.webp",
+    },
+    {
+      url: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/appstore-lt.webp",
+    },
+  ],
+};
+
+export const chipsData = [
+  {
+    title: "No collateral required",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/target.png",
+  },
+  {
+    title: "Minimum paperwork",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/paper-work.png",
+  },
+  {
+    title: "Attractive interest rate",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/star.png",
+  },
+  {
+    title: "Easy EMI options",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/bag_2.png",
+  },
+  {
+    title: "Flexible repayment tenure",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/watch.png",
+  },
+  {
+    title: "Approval within 48 hours",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/rocket.png",
+  },
+  {
+    title: "Nominal processing-fee",
+    src: "https://d5nfy7n2jvqm2.cloudfront.net/oxyzo-fe-imgs/process.png",
   },
 ];

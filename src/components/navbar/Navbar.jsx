@@ -29,20 +29,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <div className="navbar-icon">
-          <img
-            src="https://d5nfy7n2jvqm2.cloudfront.net/fe-imgs/new_design/oxyzo-logo-new-01.svg"
-            alt="logo"
-          />
+    <nav className="navbar-container">
+      <div className="navbar">
+        <div className="navbar-left">
+          <div className="navbar-icon">
+            <img
+              src="https://d5nfy7n2jvqm2.cloudfront.net/fe-imgs/new_design/oxyzo-logo-new-01.svg"
+              alt="logo"
+            />
+          </div>
         </div>
-      </div>
-      <div className="navbar-right">
-        <div className="navbar-menu">
-          {menuData.map((menu) => renderMenu(menu))}
+        <div className="navbar-right">
+          <div className="navbar-menu">
+            {menuData.map((menu) => renderMenu(menu))}
+          </div>
+          <button className="login-button">Login</button>
         </div>
-        <button className="login-button">Login</button>
       </div>
     </nav>
   );

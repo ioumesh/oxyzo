@@ -3,11 +3,11 @@
   max-width: 1366px;
   margin: auto;
   @include sm {
-    background-color: red;
   }
 }
 
 .section-layout {
   max-width: 1200px;
   margin: auto;
+  padding-top: 60px;
 }

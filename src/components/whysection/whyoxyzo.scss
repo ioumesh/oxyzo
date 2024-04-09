@@ -1,0 +1,19 @@
+.why-conatiner {
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding:30px;
+  border-radius: 12px;
+}
+.why-text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+.why-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
